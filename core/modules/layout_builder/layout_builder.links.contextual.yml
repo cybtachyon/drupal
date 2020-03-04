@@ -7,6 +7,7 @@ layout_builder_block_update:
       class: ['use-ajax']
       data-dialog-type: dialog
       data-dialog-renderer: off_canvas
+      data-dialog-options: '{"width": 900}'
 
 layout_builder_block_move:
   title: 'Move'
@@ -27,3 +28,8 @@ layout_builder_block_remove:
       class: ['use-ajax']
       data-dialog-type: dialog
       data-dialog-renderer: off_canvas
+
+entity.node.layout_builder:
+  title: 'Layout'
+  route_name: 'layout_builder_ui'
+  group: 'node'

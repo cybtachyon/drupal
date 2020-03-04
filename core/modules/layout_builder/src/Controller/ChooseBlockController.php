@@ -233,6 +233,7 @@ class ChooseBlockController implements ContainerInjectionInterface {
     foreach ($blocks as $block_id => $block) {
       $attributes = $this->getAjaxAttributes();
       $attributes['class'][] = 'js-layout-builder-block-link';
+      $attributes['data-dialog-options'] = '{"width": 900}';
       $link = [
         'title' => $block['admin_label'],
         'url' => Url::fromRoute('layout_builder.add_block',
